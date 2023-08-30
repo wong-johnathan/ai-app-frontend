@@ -3,8 +3,18 @@ on:
     branches: [main]
   workflow_dispatch:
 jobs:
+  run-typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Dependancies & Cache
+        uses: ./.github/actions/checkout_install
+      - name: Typecheck
+        run: npm run typecheck
   run-build:
     runs-on: ubuntu-latest
+    needs: run-typecheck
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
