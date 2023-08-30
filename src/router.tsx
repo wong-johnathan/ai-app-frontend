@@ -8,6 +8,7 @@ import BaseLayout from 'src/layouts/BaseLayout';
 import SuspenseLoader from 'src/components/SuspenseLoader';
 import Signin from './content/pages/Signin';
 import ForgotPassword from './content/pages/ForgotPassword';
+import Signup from './content/pages/Signup';
 
 const Loader = (Component) => (props) =>
   (
@@ -92,7 +93,7 @@ const routes: RouteObject[] = [
         element: <Navigate to="/dashboards" replace />
       },
       { path: 'sign-in', element: <Signin /> },
-      { path: 'sign-up' },
+      { path: 'sign-up', element: <Signup /> },
       { path: 'forgot-password', element: <ForgotPassword /> },
       {
         path: 'status',
