@@ -69,7 +69,7 @@ function Signin() {
                 sx={{ mb: 2, height: '50px' }}
               />
               <Button variant="outlined" sx={{ mb: 2, height: '50px' }}>
-                Sign In
+                Sign in
               </Button>
             </FormControl>
             <Divider sx={{ mb: 1 }} />
