@@ -14,6 +14,7 @@ import {
 import { Helmet } from 'react-helmet-async';
 import { Email, Password } from '@mui/icons-material';
 import Link from '../Components/Link';
+import { useNavigate } from 'react-router';
 
 const MainContent = styled(Box)(
   () => `
@@ -34,6 +35,7 @@ const OutlinedInputWrapper = styled(OutlinedInput)(
 );
 
 function Signin() {
+  const navigate = useNavigate();
   return (
     <>
       <Helmet>
@@ -68,7 +70,11 @@ function Signin() {
                 }
                 sx={{ mb: 2, height: '50px' }}
               />
-              <Button variant="outlined" sx={{ mb: 2, height: '50px' }}>
+              <Button
+                variant="outlined"
+                sx={{ mb: 2, height: '50px' }}
+                onClick={() => navigate('/')}
+              >
                 Sign in
               </Button>
             </FormControl>
