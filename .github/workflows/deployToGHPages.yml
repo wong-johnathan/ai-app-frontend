@@ -1,0 +1,13 @@
+on:
+  push:
+    branches: [main]
+jobs:
+  deploy-to-github-pages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      - name: Install Dependancies & Cache
+        uses: ./.github/actions/checkout_install
+      - name: Typecheck
+        run: npm run deploy
