@@ -4,6 +4,8 @@ import PageTitleWrapper from 'src/components/PageTitleWrapper';
 import PageHeader from './PageHeader';
 import {
   Button,
+  Card,
+  CardHeader,
   Container,
   Grid,
   InputAdornment,
@@ -52,6 +54,11 @@ const ImageGenerator = () => {
             <Button variant="outlined" style={{ height: '50px' }} fullWidth>
               Search
             </Button>
+          </Grid>
+          <Grid item xs={12}>
+            <Card>
+              <CardHeader>Images</CardHeader>
+            </Card>
           </Grid>
         </Grid>
       </Container>
