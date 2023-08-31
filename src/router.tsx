@@ -9,6 +9,7 @@ import SuspenseLoader from 'src/components/SuspenseLoader';
 import Signin from './content/pages/Signin';
 import ForgotPassword from './content/pages/ForgotPassword';
 import Signup from './content/pages/Signup';
+import ImageGenerator from './content/pages/ImageGenerator';
 
 const Loader = (Component) => (props) =>
   (
@@ -141,6 +142,9 @@ const routes: RouteObject[] = [
       {
         path: 'messenger',
         element: <Messenger />
+      },{
+        path: 'image-generator',
+        element: <ImageGenerator />
       }
     ]
   },
