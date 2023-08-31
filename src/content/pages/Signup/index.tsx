@@ -52,12 +52,12 @@ function Signup() {
                 <OutlinedInputWrapper
                   type="text"
                   placeholder="First Name"
-                  sx={{ mb: 2, height: '50px' }}
+                  sx={{ mb: 2, mr: 1, height: '50px' }}
                 />
                 <OutlinedInputWrapper
                   type="text"
                   placeholder="Last Name"
-                  sx={{ mb: 2, height: '50px' }}
+                  sx={{ mb: 2, ml: 1, height: '50px' }}
                 />
               </Stack>
               <OutlinedInputWrapper
