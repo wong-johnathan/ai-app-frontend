@@ -10,6 +10,7 @@ import Signin from './content/pages/Signin';
 import ForgotPassword from './content/pages/ForgotPassword';
 import Signup from './content/pages/Signup';
 import ImageGenerator from './content/pages/ImageGenerator';
+import ImageVault from './content/pages/ImageVault';
 
 const Loader = (Component) => (props) =>
   (
@@ -17,10 +18,6 @@ const Loader = (Component) => (props) =>
       <Component {...props} />
     </Suspense>
   );
-
-// Pages
-
-const Overview = Loader(lazy(() => import('src/content/overview')));
 
 // Dashboards
 
@@ -142,9 +139,14 @@ const routes: RouteObject[] = [
       {
         path: 'messenger',
         element: <Messenger />
-      },{
+      },
+      {
         path: 'image-generator',
         element: <ImageGenerator />
+      },
+      {
+        path: 'image-vault',
+        element: <ImageVault />
       }
     ]
   },

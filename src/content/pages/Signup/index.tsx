@@ -1,6 +1,5 @@
 import {
   Box,
-  Card,
   Typography,
   Container,
   Divider,
@@ -48,7 +47,11 @@ function Signup() {
           </Box>
           <Container maxWidth="xs">
             <FormControl variant="outlined" fullWidth>
-              <Stack direction={'row'} justifyContent="space-between" spacing={2}>
+              <Stack
+                direction={'row'}
+                justifyContent="space-between"
+                spacing={2}
+              >
                 <OutlinedInputWrapper
                   type="text"
                   placeholder="First Name"

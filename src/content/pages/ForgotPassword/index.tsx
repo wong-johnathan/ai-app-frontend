@@ -1,6 +1,5 @@
 import {
   Box,
-  Card,
   Typography,
   Container,
   Divider,

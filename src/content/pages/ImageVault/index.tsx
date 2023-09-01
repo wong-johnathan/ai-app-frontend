@@ -2,26 +2,25 @@ import { Helmet } from 'react-helmet-async';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
 import PageHeader from './PageHeader';
 import {
-  Button,
   Container,
   Grid,
   InputAdornment,
   OutlinedInput,
-  styled,
-  Chip
+  styled
 } from '@mui/material';
 import Images from './Images';
+import { Search } from '@mui/icons-material';
 const OutlinedInputWrapper = styled(OutlinedInput)(
   ({ theme }) => `
     background-color: ${theme.colors.alpha.white[100]};
 `
 );
 
-const ImageGenerator = () => {
+const ImageVault = () => {
   return (
     <>
       <Helmet>
-        <title>Create Image</title>
+        <title>Image Vault</title>
       </Helmet>
       <PageTitleWrapper>
         <PageHeader />
@@ -34,23 +33,18 @@ const ImageGenerator = () => {
           alignItems="stretch"
           spacing={2}
         >
-          <Grid item xs={12} md={10}>
+          <Grid item xs={12}>
             <OutlinedInputWrapper
               type="text"
-              placeholder="Input prompt here"
+              placeholder="Search images"
               fullWidth
               startAdornment={
                 <InputAdornment position="start">
-                  <Chip label="Surprise me" onClick={() => {}} />
+                  <Search />
                 </InputAdornment>
               }
               sx={{ height: '50px' }}
             />
-          </Grid>
-          <Grid item xs={12} md={2}>
-            <Button variant="outlined" style={{ height: '50px' }} fullWidth>
-              Generate
-            </Button>
           </Grid>
           <Grid item xs={12}>
             <Images />
@@ -61,4 +55,4 @@ const ImageGenerator = () => {
   );
 };
 
-export default ImageGenerator;
+export default ImageVault;
