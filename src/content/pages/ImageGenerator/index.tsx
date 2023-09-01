@@ -32,9 +32,9 @@ const ImageGenerator = () => {
           direction="row"
           justifyContent="center"
           alignItems="stretch"
-          xs={12}
+          spacing={2}
         >
-          <Grid xs={12} md={10} paddingX={1}>
+          <Grid item xs={12} md={10}>
             <OutlinedInputWrapper
               type="text"
               placeholder="Input ai image prompt here"
@@ -44,15 +44,15 @@ const ImageGenerator = () => {
                   <Search />
                 </InputAdornment>
               }
-              sx={{ mb: 2, height: '50px' }}
+              sx={{height: '50px' }}
             />
           </Grid>
-          <Grid xs={12} md={2} paddingX={1}>
+          <Grid item xs={12} md={2}>
             <Button variant="outlined" style={{ height: '50px' }} fullWidth>
               Search
             </Button>
           </Grid>
-          <Grid item xs={12} paddingX={1}>
+          <Grid item xs={12}>
             <Images />
           </Grid>
         </Grid>
