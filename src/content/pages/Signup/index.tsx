@@ -48,16 +48,16 @@ function Signup() {
           </Box>
           <Container maxWidth="xs">
             <FormControl variant="outlined" fullWidth>
-              <Stack direction={'row'} justifyContent="space-between">
+              <Stack direction={'row'} justifyContent="space-between" spacing={2}>
                 <OutlinedInputWrapper
                   type="text"
                   placeholder="First Name"
-                  sx={{ mb: 2, mr: 1, height: '50px' }}
+                  sx={{ mb: 2, height: '50px' }}
                 />
                 <OutlinedInputWrapper
                   type="text"
                   placeholder="Last Name"
-                  sx={{ mb: 2, ml: 1, height: '50px' }}
+                  sx={{ mb: 2, height: '50px' }}
                 />
               </Stack>
               <OutlinedInputWrapper
