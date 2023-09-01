@@ -4,9 +4,11 @@ function PageHeader() {
   return (
     <>
       <Typography variant="h3" component="h3" gutterBottom>
-        Create Image
+        Generated Images
       </Typography>
-      <Typography variant="subtitle2">Generate image from Dall-E</Typography>
+      <Typography variant="subtitle2">
+        Saved AI generated images from Dall-E
+      </Typography>
     </>
   );
 }

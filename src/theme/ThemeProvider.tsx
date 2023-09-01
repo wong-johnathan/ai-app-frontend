@@ -4,6 +4,7 @@ import { themeCreator } from './base';
 import { StylesProvider } from '@mui/styles';
 
 export const ThemeContext = React.createContext(
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   (themeName: string): void => {}
 );
 
@@ -13,6 +14,7 @@ const ThemeProviderWrapper: React.FC = (props) => {
   const theme = themeCreator(themeName);
   const setThemeName = (themeName: string): void => {
     localStorage.setItem('appTheme', themeName);
+
     _setThemeName(themeName);
   };
 

@@ -14,7 +14,7 @@ import { Helmet } from 'react-helmet-async';
 import SearchTwoToneIcon from '@mui/icons-material/SearchTwoTone';
 
 const MainContent = styled(Box)(
-  ({ theme }) => `
+  ({}) => `
     height: 100%;
     display: flex;
     flex: 1;

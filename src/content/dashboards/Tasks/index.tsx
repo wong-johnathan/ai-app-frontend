@@ -11,7 +11,6 @@ import {
   Card,
   Box,
   useTheme,
-  Avatar,
   styled
 } from '@mui/material';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
