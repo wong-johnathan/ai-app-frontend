@@ -1,6 +1,5 @@
 import { Helmet } from 'react-helmet-async';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
-import PageHeader from './PageHeader';
 import {
   Container,
   Grid,
@@ -9,7 +8,8 @@ import {
   styled
 } from '@mui/material';
 import Images from './Images';
-import { Search } from '@mui/icons-material';
+import { Backpack, Search } from '@mui/icons-material';
+import PageHeader from 'src/components/PageHeader';
 const OutlinedInputWrapper = styled(OutlinedInput)(
   ({ theme }) => `
     background-color: ${theme.colors.alpha.white[100]};
@@ -23,7 +23,11 @@ const ImageVault = () => {
         <title>Image Vault</title>
       </Helmet>
       <PageTitleWrapper>
-        <PageHeader />
+        <PageHeader
+          title="Generated Images"
+          subtitle="Saved AI generated images from Dall-E"
+          icon={<Backpack sx={{ fontSize: '50px' }} />}
+        />
       </PageTitleWrapper>
       <Container maxWidth="lg">
         <Grid

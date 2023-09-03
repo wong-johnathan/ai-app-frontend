@@ -12,8 +12,8 @@ import {
 } from '@mui/material';
 import { Helmet } from 'react-helmet-async';
 import { Email, Password } from '@mui/icons-material';
-import Link from '../Components/Link';
 import { useNavigate } from 'react-router';
+import { Link } from 'react-router-dom';
 
 const MainContent = styled(Box)(
   () => `
@@ -79,12 +79,8 @@ function Signin() {
             </FormControl>
             <Divider sx={{ mb: 1 }} />
             <Stack direction={'row'} justifyContent="space-between">
-              <Link href="/forgot-password" variant="body2">
-                Forgot password?
-              </Link>
-              <Link href="/sign-up" variant="body2">
-                {"Don't have an account? Sign Up"}
-              </Link>
+              <Link to="/forgot-password">Forgot password?</Link>
+              <Link to="/sign-up">{"Don't have an account? Sign Up"}</Link>
             </Stack>
           </Container>
         </Container>

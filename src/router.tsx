@@ -19,15 +19,6 @@ const Loader = (Component) => (props) =>
     </Suspense>
   );
 
-// Dashboards
-
-const Tasks = Loader(lazy(() => import('src/content/dashboards/Tasks')));
-
-// Applications
-
-const Messenger = Loader(
-  lazy(() => import('src/content/applications/Messenger'))
-);
 const Transactions = Loader(
   lazy(() => import('src/content/applications/Transactions'))
 );
@@ -58,10 +49,6 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '',
-        element: <Navigate to="/dashboards" replace />
-      },
-      {
-        path: 'overview',
         element: <Navigate to="/dashboards" replace />
       },
       { path: 'sign-in', element: <Signin /> },
@@ -104,15 +91,7 @@ const routes: RouteObject[] = [
     children: [
       {
         path: '',
-        element: <Navigate to="tasks" replace />
-      },
-      {
-        path: 'tasks',
-        element: <Tasks />
-      },
-      {
-        path: 'messenger',
-        element: <Messenger />
+        element: <Navigate to="image-generator" replace />
       },
       {
         path: 'image-generator',

@@ -102,7 +102,7 @@ function Logo() {
       title="Tokyo Free Black React Typescript Admin Dashboard"
       arrow
     >
-      <LogoWrapper to="/overview">
+      <LogoWrapper to="/dashboards">
         <Badge
           sx={{
             '.MuiBadge-badge': {
