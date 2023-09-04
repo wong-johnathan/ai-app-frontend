@@ -16,7 +16,6 @@ import {
   Typography
 } from '@mui/material';
 
-import InboxTwoToneIcon from '@mui/icons-material/InboxTwoTone';
 import { styled } from '@mui/material/styles';
 import ExpandMoreTwoToneIcon from '@mui/icons-material/ExpandMoreTwoTone';
 import AccountBoxTwoToneIcon from '@mui/icons-material/AccountBoxTwoTone';
@@ -120,10 +119,6 @@ function HeaderUserbox() {
           <ListItem button to="/management/profile/details" component={NavLink}>
             <AccountBoxTwoToneIcon fontSize="small" />
             <ListItemText primary="My Profile" />
-          </ListItem>
-          <ListItem button to="/dashboards/messenger" component={NavLink}>
-            <InboxTwoToneIcon fontSize="small" />
-            <ListItemText primary="Messenger" />
           </ListItem>
           <ListItem
             button

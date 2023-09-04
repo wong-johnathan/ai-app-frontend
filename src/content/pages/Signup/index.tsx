@@ -12,8 +12,7 @@ import {
 } from '@mui/material';
 import { Helmet } from 'react-helmet-async';
 import { Email, Password } from '@mui/icons-material';
-import Link from '../Components/Link';
-
+import { Link } from 'react-router-dom';
 const MainContent = styled(Box)(
   () => `
       height: 100%;
@@ -99,9 +98,7 @@ function Signup() {
             </FormControl>
             <Divider sx={{ mb: 1 }} />
             <Stack direction={'row'} justifyContent="flex-end">
-              <Link href="/sign-in" variant="body2">
-                {'Already have an account? Sign in'}
-              </Link>
+              <Link to="/sign-in">{'Already have an account? Sign in'}</Link>
             </Stack>
           </Container>
         </Container>

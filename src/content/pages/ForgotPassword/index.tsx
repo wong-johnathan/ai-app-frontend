@@ -12,7 +12,7 @@ import {
 } from '@mui/material';
 import { Helmet } from 'react-helmet-async';
 import { Email } from '@mui/icons-material';
-import Link from '../Components/Link';
+import { Link } from 'react-router-dom';
 
 const MainContent = styled(Box)(
   () => `
@@ -73,9 +73,7 @@ function ForgotPassword() {
             </FormControl>
             <Divider sx={{ mb: 1 }} />
             <Stack direction={'row'} justifyContent="flex-end">
-              <Link href="/sign-in" variant="body2">
-                Remember your password? Sign In
-              </Link>
+              <Link to="/sign-in">Remember your password? Sign In</Link>
             </Stack>
           </Container>
         </Container>

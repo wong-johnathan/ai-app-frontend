@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import PageTitleWrapper from 'src/components/PageTitleWrapper';
-import PageHeader from './PageHeader';
+import PageHeader from 'src/components/PageHeader';
 import {
   Button,
   Container,
@@ -11,6 +11,7 @@ import {
   Chip
 } from '@mui/material';
 import Images from './Images';
+import { Image } from '@mui/icons-material';
 const OutlinedInputWrapper = styled(OutlinedInput)(
   ({ theme }) => `
     background-color: ${theme.colors.alpha.white[100]};
@@ -24,7 +25,11 @@ const ImageGenerator = () => {
         <title>Create Image</title>
       </Helmet>
       <PageTitleWrapper>
-        <PageHeader />
+        <PageHeader
+          title="Create Image"
+          subtitle="Generate image from Dall-E"
+          icon={<Image sx={{ fontSize: '50px' }} />}
+        />
       </PageTitleWrapper>
       <Container maxWidth="lg">
         <Grid
