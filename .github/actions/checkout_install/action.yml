@@ -4,12 +4,12 @@ runs:
   using: 'composite'
   steps:
     - name: Cache Dependancies
-      uses: actions/cache@v3
+      uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v3.3.3
       with:
         path: ~/.npm
         key: node-modules-${{hashFiles('**/package-lock.json')}}
     - name: Setup node
-      uses: actions/setup-node@v3
+      uses: actions/setup-node@1a4442cacd436585916f1b3b1bc19c25d48e5590 # v3.8.2
     - name: Install Dependancies
       shell: bash
       run: npm install
